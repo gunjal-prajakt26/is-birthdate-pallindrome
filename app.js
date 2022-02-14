@@ -6,6 +6,7 @@ checkBtn.addEventListener('click', clickHandler);
 
 
 function clickHandler(e) {
+    output.style.border= "2px solid black";
     var data = input.value;
 
     if (data !== '') {
