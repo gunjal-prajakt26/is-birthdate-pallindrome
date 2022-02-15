@@ -1,14 +1,46 @@
 
 
+:root {
+    --primary: #e0f2fe;
+    --secondary: #0284c7;
+    --text:#0369a1;
+}
+
+body{
+    background-color: var(--secondary);
+    font-size: 1.2rem;
+    color: var(--text);
+    margin: 0;
+}
+
 .container {
     margin: auto;
     padding: 2rem;
     text-align: center;
     width: 50%;
+    border: 2px solid black;
+    background-color: var(--primary);
+    height: 90vh;
 }
 
 .output {
     padding: .5rem;
     margin: 2rem auto;
-    
+    color: #0c4a6e;
+    font-weight: bold;
+}
+
+.check-btn {
+    font-size: 1.3rem;
+    padding: .5rem 2rem;
+    border: 2px solid var(--text);
+    border-radius: 10px ;
+    background-color: #38bdf8;
+    color: white;
+}
+
+.input-date {
+    margin-top: 2rem;
+    width: 30%;
+    padding: 10px;
 }

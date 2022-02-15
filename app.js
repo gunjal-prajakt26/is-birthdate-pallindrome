@@ -6,7 +6,6 @@ checkBtn.addEventListener('click', clickHandler);
 
 
 function clickHandler(e) {
-    output.style.border= "2px solid black";
     var data = input.value;
 
     if (data !== '') {
@@ -36,13 +35,13 @@ function clickHandler(e) {
             const [ctr2, prevD] = prevPallindrom(dob);
 
             if (ctr1 > ctr2) {
-                output.innerText = "Ohh! missed by " + ctr2 + " days. Nearest pallindrome is " + prevD.day + '-' + prevD.month + '-' + prevD.year;
+                output.innerText = "Ohh! missed by " + ctr2 + " days. Nearest pallindrome is " + prevD.day + '-' + prevD.month + '-' + prevD.year+" 😊";
 
             } else {
-                output.innerText = "Ohh! missed by " + ctr1 + " days. Nearest pallindrome is " + nextD.day + '-' + nextD.month + '-' + nextD.year;
+                output.innerText = "Ohh! missed by " + ctr1 + " days. Nearest pallindrome is " + nextD.day + '-' + nextD.month + '-' + nextD.year+" 😊";
             }
         } else {
-            output.innerText = "yehhh! Your Birthdate is pallindrome";
+            output.innerText = "yehhh! Your Birthdate is pallindrome 🥳";
         }
 
     }
